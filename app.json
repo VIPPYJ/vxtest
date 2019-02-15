@@ -1,12 +1,47 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/test/test"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#eeeeee",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Test",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#eeeeee",
+    "color": "#ffff00",
+    "selectedColor": "#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/image/icon_component.png",
+        "selectedIconPath": "pages/image/icon_component_HL.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "pages/image/icon_API.png",
+        "selectedIconPath": "pages/image/icon_API_HL.png",
+        "text": "接口"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "iconPath": "pages/image/icon_API.png",
+        "selectedIconPath": "pages/image/icon_API_HL.png",
+        "text": "test"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug":true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
 }

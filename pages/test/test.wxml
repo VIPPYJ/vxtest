@@ -1,0 +1,30 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+<view>{{"我是大帅比" + msg}}</view>
+<view wx:for="{{array}}">{{item}}</view>
+<!--wxml-->
+<view wx:if="{{jj == 'WEBVIEW'}}">WEBVIEW</view>
+<view wx:elif="{{jj == 'APP'}}">APP</view>
+<view wx:else="{{jj == 'MINA'}}">MINA</view>
+
+<!--wxml-->
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+
+<button bindtap="add">{{count}}</button>
+
+
+<checkbox checked="{{false}}"></checkbox>
+
+
+<view>我很hdfaj</view>
+
+<view>{{staffA.firstName}}</view>
